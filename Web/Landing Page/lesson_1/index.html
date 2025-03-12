@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delight</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?restaurant,food') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .hero iframe {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+        .menu {
+            padding: 40px;
+            text-align: center;
+        }
+        .menu h2 {
+            font-size: 32px;
+            color: #ff5733;
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .reservation {
+            padding: 40px;
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+        }
+        .reservation form input, .reservation form button {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .reservation form button {
+            background: white;
+            color: #ff5733;
+            font-weight: bold;
+        }
+        .map {
+            text-align: center;
+            padding: 40px;
+        }
+        .map iframe {
+            width: 80%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>Gourmet Delight</header>
+    <div class="hero">
+        Welcome to Gourmet Delight
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+    
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/200x150/?pizza" alt="Pizza">
+                <p>Delicious Pizza</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/200x150/?pasta" alt="Pasta">
+                <p>Italian Pasta</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/200x150/?burger" alt="Burger">
+                <p>Juicy Burger</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reservation">
+        <h2>Reserve a Table</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509426!2d144.95373631531567!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776f9b75943e02!2sMelbourne!5e0!3m2!1sen!2sau!4v1600000000000" allowfullscreen></iframe>
+    </section>
+</body>
+</html>
