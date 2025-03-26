@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { registerUser } from '../api';
 import { AxiosError } from 'axios';
 
@@ -48,6 +48,12 @@ const SignUp: React.FC<SignUpProps> = ({ setSignupMessage }) => {
           Sign Up
         </button>
       </form>
+      <br />
+      <Link to="/signin" className='ml-5'>
+        <button className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">
+          Sign In
+        </button>
+      </Link>
     </div>
   );
 };
