@@ -56,7 +56,7 @@ export const SignIn: React.FC<SignInProps> = ({ onLogin, signupMessage }) => {
             <div className='mt-4 '>
                 <Link to="/" className='text-blue-500 hover:underline'>Back to Landing Page</Link>
                 <br />
-                <Link to="/signin" className='text-blue-500 hover:underline'>Do not have an account? Sign Up</Link>
+                <Link to="/signup" className='text-blue-500 hover:underline'>Do not have an account? Sign Up</Link>
             </div>
         </div>
     )
